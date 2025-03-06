@@ -9,23 +9,19 @@ public class Main {
         float number = scanner.nextFloat();
         if (number > 0) {
             System.out.println("The number is positive");
-            if (number < 1){
+            if (number < 1) {
                 System.out.println("small");
-            }
-            else if (number > 1000000){
+            } else if (number > 1000000) {
                 System.out.println("large");
             }
-        }
-        else if (number < 0) {
+        } else if (number < 0) {
             System.out.println("The number is negative");
-            if (-number < 1){
+            if (-number < 1) {
                 System.out.println("small");
-            }
-            else if (-number > 1000000){
+            } else if (-number > 1000000) {
                 System.out.println("large");
             }
-        }
-        else{
+        } else {
             System.out.println("The number is zero");
         }
     }
