@@ -2,13 +2,29 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        final double AC_GRAVITY = 9.81;
-        System.out.print("Welcome to gravitational potential calculator please enter the mass of the object in kilograms : ");
+        System.out.print("Welcome to sign identifier please enter the desired number: ");
         Scanner scanner = new Scanner(System.in);
-        double mass = scanner.nextDouble();
-        System.out.print("Please enter the height of the object in meters : ");
-        double height = scanner.nextDouble();
-        double mgh = mass * height * AC_GRAVITY;
-        System.out.println("The gravitational potential energy is : " + mgh + " joules");
+        float number = scanner.nextFloat();
+        if (number > 0) {
+            System.out.println("The number is positive");
+            if (number < 1){
+                System.out.println("small");
+            }
+            else if (number > 1000000){
+                System.out.println("large");
+            }
+        }
+        else if (number < 0) {
+            System.out.println("The number is negative");
+            if (-number < 1){
+                System.out.println("small");
+            }
+            else if (-number > 1000000){
+                System.out.println("large");
+            }
+        }
+        else{
+            System.out.println("The number is zero");
+            }
+        }
     }
-}
